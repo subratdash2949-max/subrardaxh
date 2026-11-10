@@ -20,10 +20,12 @@
     h1{font-size:clamp(42px,6vw,76px);line-height:1.04;letter-spacing:-3px;margin:18px 0}
     h1 em{font-style:normal;color:var(--accent)}.lead{max-width:570px;color:var(--muted);font-size:18px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .visual{min-height:410px;border:1px solid #34333c;border-radius:28px;overflow:hidden;position:relative;background:radial-gradient(circle at 70% 25%,#b7ef5a55,transparent 28%),radial-gradient(circle at 25% 80%,#9d6cff55,transparent 35%),linear-gradient(135deg,#282631,#111116 65%)}
-    .visual:before{content:"AI";position:absolute;font-size:clamp(130px,22vw,260px);font-weight:900;letter-spacing:-18px;color:#ffffff0c;right:12px;bottom:-45px}
-    .visual-card{position:absolute;inset:13% 12%;border:1px solid #ffffff35;border-radius:20px;background:linear-gradient(145deg,#ffffff18,#ffffff04);backdrop-filter:blur(5px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px;transform:rotate(-5deg)}
-    .visual-card strong{font-size:clamp(32px,5vw,54px);line-height:1.05}.visual-card small{color:#d8d5df;letter-spacing:3px;margin-top:15px}
+    .visual{min-height:410px;border:1px solid #454052;border-radius:28px;overflow:hidden;position:relative;background:#17131f;box-shadow:0 24px 70px #0008,0 0 45px #b77bff22}
+    .visual img{display:block;width:100%;height:100%;min-height:410px;object-fit:cover;object-position:center;border-radius:28px}
+    .visual-tag{position:absolute;left:18px;bottom:18px;padding:9px 14px;border:1px solid #ffffff35;border-radius:999px;background:#101014b8;color:#fff;font-size:12px;letter-spacing:1px;backdrop-filter:blur(10px)}
+    .hero-copy{position:relative}.hero-copy:after{content:"✦  CREATIVE • AI • VISUALS";display:block;margin-top:24px;color:#c7ff5e;font-size:11px;font-weight:800;letter-spacing:2px}
+    .hero .eyebrow{display:inline-block;padding:8px 12px;border:1px solid #c7ff5e55;border-radius:999px;background:#c7ff5e12}
+    .hero h1 em{text-shadow:0 0 28px #c7ff5e35}
     section{padding:76px 0}.section-head{max-width:650px;margin-bottom:30px}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:10px 0}.section-head p{color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service,.price,.contact-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px}
     .num{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:1px}.service h3{margin:13px 0 8px}.service p,.price p{color:var(--muted);margin:0}
@@ -46,13 +48,13 @@
 </nav></div></header>
 <main>
   <div class="wrap hero" id="home">
-    <div>
+    <div class="hero-copy">
       <div class="eyebrow">AI Photo & Ad Creative Services</div>
       <h1>I'm <em>Subrat Dash.</em><br>Let's create something unforgettable.</h1>
       <p class="lead">I create eye-catching AI photos, creative edits and advertisement visuals that help people and brands stand out.</p>
       <div class="actions"><a class="btn" href="#contact">Get a Quote</a><a class="btn outline" href="#portfolio">View Work</a></div>
     </div>
-    <div class="visual"><div class="visual-card"><strong>IMAGINE.<br>CREATE.<br><em style="color:var(--accent)">STAND OUT.</em></strong><small>AI CREATIVE STUDIO</small></div></div>
+    <div class="visual"><img src="studio-animation.gif" alt="3D cartoon-style Subrat Dash working creatively at a computer in his AI studio"><div class="visual-tag">● LIVE CREATIVE MODE</div></div>
   </div>
 
   <section id="services"><div class="wrap">
